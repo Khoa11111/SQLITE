@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm Computer"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#FF00"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/txtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerInParent="true"
+        android:ems="15"
+        android:hint="Id Computer"
+        android:textColor="#706B6B" />
+
+    <EditText
+        android:layout_below="@+id/txtId"
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="15"
+        android:hint="Computer Name"
+        android:textColor="#706B6B"/>
+
+    <EditText
+        android:layout_below="@+id/txtName"
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="15"
+        android:hint="Id Category"
+        android:textColor="#706B6B"/>
+
+
+    <Button
+        android:id="@+id/btn_Them"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCategory"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btn_Huy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCategory"
+        android:layout_toRightOf="@+id/btn_Them"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="Hủy"/>
+</RelativeLayout>
